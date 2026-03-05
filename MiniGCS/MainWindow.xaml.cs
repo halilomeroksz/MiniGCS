@@ -19,6 +19,8 @@ namespace MiniGCS
         public MainWindow()
         {
             InitializeComponent();
+            // Bu satır olmazsa rakamlar asla değişmez:
+            this.DataContext = new MiniGCS.ViewModels.MainViewModel();
         }
     }
 }
