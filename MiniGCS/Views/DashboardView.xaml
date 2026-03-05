@@ -1,0 +1,35 @@
+﻿<UserControl x:Class="MiniGCS.Views.DashboardView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             Background="#1E1E1E">
+
+    <Grid Margin="20">
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+
+            <TextBlock Text="MİNİ YER KONTROL İSTASYONU" 
+                       Foreground="LimeGreen" FontSize="24" FontWeight="Bold" Margin="0,0,0,30" HorizontalAlignment="Center"/>
+
+            <Border Background="#2D2D2D" CornerRadius="10" Padding="15" Margin="5" Width="300">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="UÇUŞ HIZI:" Foreground="White" FontSize="18"/>
+                    <TextBlock Text="{Binding SpeedDisplay}" Foreground="Yellow" FontSize="18" FontWeight="Bold" Margin="20,0,0,0"/>
+                </StackPanel>
+            </Border>
+
+            <Border Background="#2D2D2D" CornerRadius="10" Padding="15" Margin="5" Width="300">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="İRTİFA:" Foreground="White" FontSize="18"/>
+                    <TextBlock Text="{Binding AltitudeDisplay}" Foreground="Cyan" FontSize="18" FontWeight="Bold" Margin="20,0,0,0"/>
+                </StackPanel>
+            </Border>
+
+            <Border Background="#2D2D2D" CornerRadius="10" Padding="15" Margin="5" Width="300">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="BATARYA:" Foreground="White" FontSize="18"/>
+                    <TextBlock Text="{Binding BatteryDisplay}" Foreground="Orange" FontSize="18" FontWeight="Bold" Margin="20,0,0,0"/>
+                </StackPanel>
+            </Border>
+
+        </StackPanel>
+    </Grid>
+</UserControl>
